@@ -349,7 +349,7 @@ function Index() {
                 loading="lazy"
                 width={512}
                 height={512}
-                className="mx-auto mt-2 aspect-square w-48 rounded-xl object-cover"
+                className="mx-auto mt-2 aspect-square w-full rounded-xl object-cover"
               />
               <span className="mt-3 inline-block rounded-full bg-[image:var(--gradient-neon)] px-3 py-1 text-[0.65rem] font-bold text-[oklch(0.15_0.04_259)]">
                 BÔNUS {i + 1}
