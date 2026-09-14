@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
-import heroProduto from "@/assets/hero-produto.png";
+import produtoPrincipalMockup from "@/assets/bonus-mockup-01.png.asset.json";
 import mapa01 from "@/assets/mapa-01.jpg";
 import mapa02 from "@/assets/mapa-02.jpg";
 import mapa03 from "@/assets/mapa-03.jpg";
@@ -9,9 +9,9 @@ import mapa04 from "@/assets/mapa-04.jpg";
 import mapa05 from "@/assets/mapa-05.jpg";
 import mapa06 from "@/assets/mapa-06.jpg";
 import bonus01 from "@/assets/bonus-01.jpg";
-import bonus02 from "@/assets/bonus-02.jpg";
-import bonus03 from "@/assets/bonus-03.jpg";
-import bonus04 from "@/assets/bonus-04.jpg";
+import bonus02Mockup from "@/assets/bonus-mockup-02.png.asset.json";
+import bonus03Mockup from "@/assets/bonus-mockup-03.png.asset.json";
+import bonus04Mockup from "@/assets/bonus-mockup-04.png.asset.json";
 import garantia from "@/assets/garantia-30.png";
 import mapaBuspirona from "@/assets/buspirona_mapa_visual_da_ansiedade.webp.asset.json";
 import mapaEscitalopram from "@/assets/escitalopram_mapa_visual_da_serotonina.webp.asset.json";
@@ -47,6 +47,7 @@ export const Route = createFileRoute("/")({
 });
 
 const CTA_HREF = "#planos";
+const heroProduto = produtoPrincipalMockup.url;
 
 function Cta({ label = "QUERO MEUS 60 MAPAS VISUAIS" }: { label?: string }) {
   return (
@@ -120,9 +121,9 @@ const confirmacao = [
 
 const bonusList = [
   [bonus01, "Guia Visual dos Neurotransmissores", "Serotonina, dopamina, noradrenalina, GABA, glutamato e acetilcolina em mapas rápidos.", "R$ 37,00"],
-  [bonus02, "Painéis de Comparação Rápida", "ISRS × IRSN, agonista × antagonista, meia-vida × duração do efeito.", "R$ 29,00"],
-  [bonus03, "Revisão Expressa de Psicofarmacologia", "Cartões visuais para revisar mecanismo, classe e alvo em poucos minutos.", "R$ 27,00"],
-  [bonus04, "Pôster Resumo dos Psicofármacos", "Uma visão geral das classes e alvos para deixar sempre à vista.", "R$ 24,00"],
+  [bonus02Mockup.url, "Tabela Visual de Receptores e Alvos", "Uma visão prática de 5-HT, D2, H1, M1, GABA-A e outros alvos clínicos.", "R$ 29,00"],
+  [bonus03Mockup.url, "Protocolos de Monitorização e Segurança", "QT, clozapina, lítio, interações e sinais de alerta para consulta rápida.", "R$ 27,00"],
+  [bonus04Mockup.url, "Pôster Resumo dos Psicofármacos", "Uma visão geral das classes e alvos para deixar sempre à vista.", "R$ 24,00"],
 ];
 
 const itensPrincipais = [
@@ -348,7 +349,7 @@ function Index() {
                 loading="lazy"
                 width={512}
                 height={512}
-                className="mx-auto mt-2 aspect-square w-48 rounded-xl object-cover"
+                className="mx-auto mt-2 aspect-square w-full rounded-xl object-cover"
               />
               <span className="mt-3 inline-block rounded-full bg-[image:var(--gradient-neon)] px-3 py-1 text-[0.65rem] font-bold text-[oklch(0.15_0.04_259)]">
                 BÔNUS {i + 1}
