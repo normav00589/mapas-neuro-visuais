@@ -8,7 +8,7 @@ import mapa03 from "@/assets/mapa-03.jpg";
 import mapa04 from "@/assets/mapa-04.jpg";
 import mapa05 from "@/assets/mapa-05.jpg";
 import mapa06 from "@/assets/mapa-06.jpg";
-import bonus01 from "@/assets/bonus-01.jpg";
+import bonus01Mockup from "@/assets/bonus-mockup-neurotransmissores.png.asset.json";
 import bonus02Mockup from "@/assets/bonus-mockup-02.png.asset.json";
 import bonus03Mockup from "@/assets/bonus-mockup-03.png.asset.json";
 import bonus04Mockup from "@/assets/bonus-mockup-04.png.asset.json";
@@ -120,7 +120,7 @@ const confirmacao = [
 ];
 
 const bonusList = [
-  [bonus01, "Guia Visual dos Neurotransmissores", "Serotonina, dopamina, noradrenalina, GABA, glutamato e acetilcolina em mapas rápidos.", "R$ 37,00"],
+  [bonus01Mockup.url, "Guia Rápido de Neurotransmissores", "Serotonina, dopamina, noradrenalina, GABA e glutamato em consulta visual.", "R$ 37,00"],
   [bonus02Mockup.url, "Tabela Visual de Receptores e Alvos", "Uma visão prática de 5-HT, D2, H1, M1, GABA-A e outros alvos clínicos.", "R$ 29,00"],
   [bonus03Mockup.url, "Protocolos de Monitorização e Segurança", "QT, clozapina, lítio, interações e sinais de alerta para consulta rápida.", "R$ 27,00"],
   [bonus04Mockup.url, "Pôster Resumo dos Psicofármacos", "Uma visão geral das classes e alvos para deixar sempre à vista.", "R$ 24,00"],
