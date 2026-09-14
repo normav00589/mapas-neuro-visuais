@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import produtoPrincipalMockup from "@/assets/bonus-mockup-01.png.asset.json";
 import mapa01 from "@/assets/mapa-01.jpg";
@@ -84,6 +84,31 @@ function Marquee({ imgs, reverse = false }: { imgs: string[]; reverse?: boolean 
             className="h-56 w-auto shrink-0 rounded-xl border border-border object-cover shadow-lg"
           />
         ))}
+      </div>
+    </div>
+  );
+}
+
+function UrgencyBanner() {
+  const [dateStr, setDateStr] = useState<string | null>(null);
+
+  useEffect(() => {
+    const now = new Date();
+    const dd = String(now.getDate()).padStart(2, "0");
+    const mm = String(now.getMonth() + 1).padStart(2, "0");
+    setDateStr(`${dd}/${mm}`);
+  }, []);
+
+  return (
+    <div className="fixed inset-x-0 top-0 z-50">
+      <div className="urgency-banner">
+        <span className="urgency-dot" />
+        <p className="urgency-text">
+          <span className="urgency-label">OFERTA RELÂMPAGO</span>
+          {" — "}
+          <strong>10% de desconto</strong> só hoje
+          {dateStr ? ` · ${dateStr}` : ""}
+        </p>
       </div>
     </div>
   );
@@ -176,8 +201,10 @@ function Index() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <main className="mx-auto w-full max-w-lg px-4 pb-16">
-      {/* DOBRA 1 — PROMESSA */}
+    <>
+      <UrgencyBanner />
+      <main className="mx-auto w-full max-w-lg px-4 pb-16 pt-12">
+        {/* DOBRA 1 — PROMESSA */}
       <section className="pt-10 text-center">
         <p className="text-[0.68rem] font-semibold tracking-[0.35em] text-primary">
           PSICOFARMACOLOGIA VISUAL
@@ -582,5 +609,6 @@ function Index() {
         </p>
       </footer>
     </main>
+    </>
   );
 }
