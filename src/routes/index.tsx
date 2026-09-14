@@ -89,6 +89,31 @@ function Marquee({ imgs, reverse = false }: { imgs: string[]; reverse?: boolean 
   );
 }
 
+function UrgencyBanner() {
+  const [dateStr, setDateStr] = useState<string | null>(null);
+
+  useEffect(() => {
+    const now = new Date();
+    const dd = String(now.getDate()).padStart(2, "0");
+    const mm = String(now.getMonth() + 1).padStart(2, "0");
+    setDateStr(`${dd}/${mm}`);
+  }, []);
+
+  return (
+    <div className="fixed inset-x-0 top-0 z-50">
+      <div className="urgency-banner">
+        <span className="urgency-dot" />
+        <p className="urgency-text">
+          <span className="urgency-label">OFERTA RELÂMPAGO</span>
+          {" — "}
+          <strong>10% de desconto</strong> só hoje
+          {dateStr ? ` · ${dateStr}` : ""}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 const temas = [
   ["Receptores", "Como o remédio encaixa e o que acontece depois"],
   ["Agonismo × Antagonismo", "A diferença que muda todo o efeito"],
