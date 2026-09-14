@@ -23,6 +23,12 @@ import mapaDopamina from "@/assets/mapa_visual_da_dopamina.webp.asset.json";
 import mapaClonazepam from "@/assets/mapa_visual_do_clonazepam.webp.asset.json";
 import mapaBloqueioAlfa1 from "@/assets/bloqueio_alfa_1_e_hipotensão_ortostática.webp.asset.json";
 import mapaBloqueioD2 from "@/assets/bloqueio_d2_e_efeitos_extrapiramidais.webp.asset.json";
+import depoimentoJoaoPedro from "@/assets/depoimento-joao-pedro.png.asset.json";
+import depoimentoBianca from "@/assets/depoimento-bianca.png.asset.json";
+import depoimentoAline from "@/assets/depoimento-aline.png.asset.json";
+import depoimentoMariana from "@/assets/depoimento-mariana.png.asset.json";
+import depoimentoJulia from "@/assets/depoimento-julia.png.asset.json";
+import depoimentoBruno from "@/assets/depoimento-bruno.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -268,13 +274,45 @@ function Index() {
         </div>
       </section>
 
-      {/* DOBRA 5 — AMOSTRA */}
+      {/* DOBRA 5 — DEPOIMENTOS */}
       <section className="mt-14">
         <h2 className="text-center text-2xl font-bold uppercase">
-          Amostra do <span className="text-gradient">conteúdo</span>
+          Veja quem comprou e o que está <span className="text-gradient">achando</span>
         </h2>
-        <div className="mt-5">
-          <Marquee imgs={[mapa05, mapa06, mapa03, mapa01]} reverse />
+        <p className="mt-2 text-center text-sm text-muted-foreground">
+          Depoimentos reais de quem já está estudando com o material
+        </p>
+        <div className="mt-5 space-y-3">
+          <div className="relative -mx-4 overflow-hidden py-1">
+            <div className="marquee-track">
+              {[depoimentoJoaoPedro.url, depoimentoBianca.url, depoimentoAline.url, depoimentoJoaoPedro.url, depoimentoBianca.url, depoimentoAline.url].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Depoimento de aluno do Psicofármacos por Dentro"
+                  loading="lazy"
+                  width={471}
+                  height={836}
+                  className="h-80 w-auto shrink-0 rounded-xl border border-border object-cover shadow-lg"
+                />
+              ))}
+            </div>
+          </div>
+          <div className="relative -mx-4 overflow-hidden py-1">
+            <div className="marquee-track" style={{ animationDirection: "reverse" }}>
+              {[depoimentoMariana.url, depoimentoJulia.url, depoimentoBruno.url, depoimentoMariana.url, depoimentoJulia.url, depoimentoBruno.url].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Depoimento de aluno do Psicofármacos por Dentro"
+                  loading="lazy"
+                  width={471}
+                  height={836}
+                  className="h-80 w-auto shrink-0 rounded-xl border border-border object-cover shadow-lg"
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
