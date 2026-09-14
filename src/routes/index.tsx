@@ -23,6 +23,12 @@ import mapaDopamina from "@/assets/mapa_visual_da_dopamina.webp.asset.json";
 import mapaClonazepam from "@/assets/mapa_visual_do_clonazepam.webp.asset.json";
 import mapaBloqueioAlfa1 from "@/assets/bloqueio_alfa_1_e_hipotensão_ortostática.webp.asset.json";
 import mapaBloqueioD2 from "@/assets/bloqueio_d2_e_efeitos_extrapiramidais.webp.asset.json";
+import depoimentoJoaoPedro from "@/assets/depoimento-joao-pedro.png.asset.json";
+import depoimentoBianca from "@/assets/depoimento-bianca.png.asset.json";
+import depoimentoAline from "@/assets/depoimento-aline.png.asset.json";
+import depoimentoMariana from "@/assets/depoimento-mariana.png.asset.json";
+import depoimentoJulia from "@/assets/depoimento-julia.png.asset.json";
+import depoimentoBruno from "@/assets/depoimento-bruno.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
