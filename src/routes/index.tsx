@@ -201,8 +201,10 @@ function Index() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <main className="mx-auto w-full max-w-lg px-4 pb-16">
-      {/* DOBRA 1 — PROMESSA */}
+    <>
+      <UrgencyBanner />
+      <main className="mx-auto w-full max-w-lg px-4 pb-16 pt-12">
+        {/* DOBRA 1 — PROMESSA */}
       <section className="pt-10 text-center">
         <p className="text-[0.68rem] font-semibold tracking-[0.35em] text-primary">
           PSICOFARMACOLOGIA VISUAL
