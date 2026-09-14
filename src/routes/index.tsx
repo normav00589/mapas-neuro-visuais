@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import produtoPrincipalMockup from "@/assets/bonus-mockup-01.png.asset.json";
 import mapa01 from "@/assets/mapa-01.jpg";
