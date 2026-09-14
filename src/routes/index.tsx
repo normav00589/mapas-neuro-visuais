@@ -8,7 +8,7 @@ import mapa03 from "@/assets/mapa-03.jpg";
 import mapa04 from "@/assets/mapa-04.jpg";
 import mapa05 from "@/assets/mapa-05.jpg";
 import mapa06 from "@/assets/mapa-06.jpg";
-import bonus01 from "@/assets/bonus-01.jpg";
+import bonus01Mockup from "@/assets/bonus-mockup-neurotransmissores.png.asset.json";
 import bonus02Mockup from "@/assets/bonus-mockup-02.png.asset.json";
 import bonus03Mockup from "@/assets/bonus-mockup-03.png.asset.json";
 import bonus04Mockup from "@/assets/bonus-mockup-04.png.asset.json";
