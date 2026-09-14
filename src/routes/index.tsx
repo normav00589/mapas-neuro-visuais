@@ -13,6 +13,16 @@ import bonus02 from "@/assets/bonus-02.jpg";
 import bonus03 from "@/assets/bonus-03.jpg";
 import bonus04 from "@/assets/bonus-04.jpg";
 import garantia from "@/assets/garantia-30.png";
+import mapaBuspirona from "@/assets/buspirona_mapa_visual_da_ansiedade.webp.asset.json";
+import mapaEscitalopram from "@/assets/escitalopram_mapa_visual_da_serotonina.webp.asset.json";
+import mapaFluoxetina from "@/assets/fluoxetina_mapa_visual_da_sinapse.webp.asset.json";
+import mapaCitalopram from "@/assets/mapa_neon_do_citalopram_e_serotonina.webp.asset.json";
+import mapaBupropiona from "@/assets/mapa_visual_da_bupropiona_nos_neurônios.webp.asset.json";
+import mapaCarbamazepina from "@/assets/mapa_visual_da_carbamazepina.webp.asset.json";
+import mapaDopamina from "@/assets/mapa_visual_da_dopamina.webp.asset.json";
+import mapaClonazepam from "@/assets/mapa_visual_do_clonazepam.webp.asset.json";
+import mapaBloqueioAlfa1 from "@/assets/bloqueio_alfa_1_e_hipotensão_ortostática.webp.asset.json";
+import mapaBloqueioD2 from "@/assets/bloqueio_d2_e_efeitos_extrapiramidais.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -197,8 +207,8 @@ function Index() {
           O que você vai <span className="text-gradient">encontrar</span>
         </h2>
         <div className="mt-5 space-y-3">
-          <Marquee imgs={[mapa01, mapa02, mapa03, mapa04]} />
-          <Marquee imgs={[mapa05, mapa06, mapa04, mapa02]} reverse />
+          <Marquee imgs={[mapaBuspirona.url, mapaEscitalopram.url, mapaFluoxetina.url, mapaCitalopram.url, mapaBupropiona.url]} />
+          <Marquee imgs={[mapaCarbamazepina.url, mapaDopamina.url, mapaClonazepam.url, mapaBloqueioAlfa1.url, mapaBloqueioD2.url]} reverse />
         </div>
         <p className="mt-5 text-center text-sm text-muted-foreground">
           Os 60 mapas cobrem do básico ao que mais cai em prova e mais confunde na prática:
