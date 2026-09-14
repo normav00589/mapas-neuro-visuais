@@ -479,7 +479,7 @@ function Index() {
           <p className="font-display text-5xl font-bold text-gradient">R$ 19,90</p>
           <p className="text-xs text-muted-foreground">Pagamento único • à vista</p>
           <div className="mt-4">
-            <Cta label="QUERO O PLANO COMPLETO" />
+            <Cta label="QUERO O PLANO COMPLETO" href={CHECKOUT_PRO} />
           </div>
         </div>
 
