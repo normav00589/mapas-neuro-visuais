@@ -53,11 +53,13 @@ export const Route = createFileRoute("/")({
 });
 
 const CTA_HREF = "#planos";
+const CHECKOUT_BASICO = "https://pay.wiapy.com/8dHlBmQF5Lwg";
+const CHECKOUT_PRO = "https://pay.wiapy.com/_qWyJetb7V6";
 const heroProduto = produtoPrincipalMockup.url;
 
-function Cta({ label = "QUERO MEUS 60 MAPAS VISUAIS" }: { label?: string }) {
+function Cta({ label = "QUERO MEUS 60 MAPAS VISUAIS", href = CTA_HREF }: { label?: string; href?: string }) {
   return (
-    <a href={CTA_HREF} className="btn-cta">
+    <a href={href} className="btn-cta" target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined}>
       {label}
     </a>
   );
