@@ -196,8 +196,9 @@ function Index() {
         <h2 className="text-center text-2xl font-bold uppercase">
           O que você vai <span className="text-gradient">encontrar</span>
         </h2>
-        <div className="mt-5">
+        <div className="mt-5 space-y-3">
           <Marquee imgs={[mapa01, mapa02, mapa03, mapa04]} />
+          <Marquee imgs={[mapa05, mapa06, mapa04, mapa02]} reverse />
         </div>
         <p className="mt-5 text-center text-sm text-muted-foreground">
           Os 60 mapas cobrem do básico ao que mais cai em prova e mais confunde na prática:
