@@ -274,13 +274,45 @@ function Index() {
         </div>
       </section>
 
-      {/* DOBRA 5 — AMOSTRA */}
+      {/* DOBRA 5 — DEPOIMENTOS */}
       <section className="mt-14">
         <h2 className="text-center text-2xl font-bold uppercase">
-          Amostra do <span className="text-gradient">conteúdo</span>
+          Veja quem comprou e o que está <span className="text-gradient">achando</span>
         </h2>
-        <div className="mt-5">
-          <Marquee imgs={[mapa05, mapa06, mapa03, mapa01]} reverse />
+        <p className="mt-2 text-center text-sm text-muted-foreground">
+          Depoimentos reais de quem já está estudando com o material
+        </p>
+        <div className="mt-5 space-y-3">
+          <div className="relative -mx-4 overflow-hidden py-1">
+            <div className="marquee-track">
+              {[depoimentoJoaoPedro.url, depoimentoBianca.url, depoimentoAline.url, depoimentoJoaoPedro.url, depoimentoBianca.url, depoimentoAline.url].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Depoimento de aluno do Psicofármacos por Dentro"
+                  loading="lazy"
+                  width={471}
+                  height={836}
+                  className="h-80 w-auto shrink-0 rounded-xl border border-border object-cover shadow-lg"
+                />
+              ))}
+            </div>
+          </div>
+          <div className="relative -mx-4 overflow-hidden py-1">
+            <div className="marquee-track" style={{ animationDirection: "reverse" }}>
+              {[depoimentoMariana.url, depoimentoJulia.url, depoimentoBruno.url, depoimentoMariana.url, depoimentoJulia.url, depoimentoBruno.url].map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Depoimento de aluno do Psicofármacos por Dentro"
+                  loading="lazy"
+                  width={471}
+                  height={836}
+                  className="h-80 w-auto shrink-0 rounded-xl border border-border object-cover shadow-lg"
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
