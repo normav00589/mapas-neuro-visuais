@@ -207,8 +207,8 @@ function Index() {
           O que você vai <span className="text-gradient">encontrar</span>
         </h2>
         <div className="mt-5 space-y-3">
-          <Marquee imgs={[mapa01, mapa02, mapa03, mapa04]} />
-          <Marquee imgs={[mapa05, mapa06, mapa04, mapa02]} reverse />
+          <Marquee imgs={[mapaBuspirona.url, mapaEscitalopram.url, mapaFluoxetina.url, mapaCitalopram.url, mapaBupropiona.url]} />
+          <Marquee imgs={[mapaCarbamazepina.url, mapaDopamina.url, mapaClonazepam.url, mapaBloqueioAlfa1.url, mapaBloqueioD2.url]} reverse />
         </div>
         <p className="mt-5 text-center text-sm text-muted-foreground">
           Os 60 mapas cobrem do básico ao que mais cai em prova e mais confunde na prática:
