@@ -433,7 +433,7 @@ function Index() {
           <p className="font-display text-4xl font-bold">R$ 9,90</p>
           <p className="text-xs text-muted-foreground">Pagamento único • à vista</p>
           <div className="mt-4">
-            <Cta label="QUERO O PLANO BÁSICO" />
+            <Cta label="QUERO O PLANO BÁSICO" href={CHECKOUT_BASICO} />
           </div>
         </div>
 
